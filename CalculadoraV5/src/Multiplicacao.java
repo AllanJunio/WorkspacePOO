@@ -1,0 +1,28 @@
+
+//A interface "IOperacao" é implementada na classe multiplicação
+//Fazendo com que todos os métodos que fazem parte da interface serem implementados na classe
+public class Multiplicacao implements IOperacao {
+	private double num1;
+	private double num2;
+
+	public double getNum1() {
+		return this.num1;
+	}
+
+	public void setNum1(double num1) {
+		this.num1 = num1;
+	}
+
+	public double getNum2() {
+		return this.num2;
+	}
+
+	public void setNum2(double num2) {
+		this.num2 = num2;
+	}
+
+	public double calcula() {
+		double mult = num1 * num2;
+		return mult;
+	}
+}
